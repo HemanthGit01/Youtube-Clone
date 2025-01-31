@@ -1,0 +1,32 @@
+<html lang="en">
+  <head>
+    <title>YT Clone</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>YT Clone</h1>
+      <input type="text" id="search-box" placeholder="Search videos..." />
+      <button onclick="searchVideos()">Search</button>
+      <button id="toggle-dark-mode">🌙 Dark Mode</button>
+    </header>
+
+    <div id="video-container"></div>
+
+    <button id="load-more" style="display: none">Load More...</button>
+
+    <div id="video-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <iframe
+          id="video-player"
+          width="100%"
+          height="400"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
